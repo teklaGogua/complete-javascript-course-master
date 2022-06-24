@@ -1,6 +1,6 @@
 //Values and Variables assignment
-let myCountry = 'Georgia';
-let myContinent = 'Europe/Asia';
+const myCountry = 'Georgia';
+const myContinent = 'Europe/Asia';
 let myPopulation = 3;
 
 console.log(myCountry, myContinent, myPopulation);
@@ -30,10 +30,18 @@ console.log(typeof null); //It return object, but null's type is null
 */
 
 //Data types asssignment
-let isIsland = false;
+const isIsland = false;
 let myLanguage;
 
 console.log(typeof isIsland); //boolean
 console.log(typeof myPopulation); //number
 console.log(typeof myCountry); //string
 console.log(typeof myLanguage); //undefined
+
+//let, const and var assignment
+myLanguage = 'Georgian';
+
+console.log(myLanguage);
+console.log(typeof myLanguage);
+
+
