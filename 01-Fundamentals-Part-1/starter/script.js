@@ -44,4 +44,21 @@ myLanguage = 'Georgian';
 console.log(myLanguage);
 console.log(typeof myLanguage);
 
+//Basic operators assignment
+let halfPopulation = myPopulation / 2;
+console.log(halfPopulation); //1,5
+
+myPopulation++;
+console.log(myPopulation); //4
+
+let finlandPopulation = 4;
+console.log(myPopulation > finlandPopulation); //false
+
+let averagePopulation = 33;
+console.log(myPopulation < averagePopulation); //true
+
+const description = myCountry + ' is in ' + myContinent + ', and its ' + myPopulation + ' million people speak ' + myLanguage;
+console.log(description); //Georgia is in Europe/Asia, and its 4 million people speak Georgian
+
+
 
