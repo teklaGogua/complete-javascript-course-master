@@ -60,5 +60,24 @@ console.log(myPopulation < averagePopulation); //true
 const description = myCountry + ' is in ' + myContinent + ', and its ' + myPopulation + ' million people speak ' + myLanguage;
 console.log(description); //Georgia is in Europe/Asia, and its 4 million people speak Georgian
 
+//Strings and template literals
+const firstName = 'Tekla';
+const job = 'programmer';
+const birthYear = 2006;
+const year = 2022;
 
+const tekla = "I'm " + firstName + ', a ' + (year - birthYear) + 'years old ' + job + '!';
+console.log(tekla);
 
+const teklaNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
+console.log(teklaNew);
+
+console.log(`Just a regular string...`);
+
+console.log('String with \n\
+multiple \n\
+lines'); //Before ES6
+
+console.log(`String
+multiple
+lines`); //with multiline string we use template literals `` 
