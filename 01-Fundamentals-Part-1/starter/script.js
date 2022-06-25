@@ -60,6 +60,7 @@ console.log(myPopulation < averagePopulation); //true
 const description = myCountry + ' is in ' + myContinent + ', and its ' + myPopulation + ' million people speak ' + myLanguage;
 console.log(description); //Georgia is in Europe/Asia, and its 4 million people speak Georgian
 
+/*
 //Strings and template literals
 const firstName = 'Tekla';
 const job = 'programmer';
@@ -81,3 +82,8 @@ lines'); //Before ES6
 console.log(`String
 multiple
 lines`); //with multiline string we use template literals `` 
+*/
+
+//Strings and template literals assignment
+const descriptionNew = `${myCountry} is in ${myContinent}, and it's ${myPopulation} million people speak ${myLanguage}`;
+console.log(descriptionNew); //Georgia is in Europe/Asia, and it's 4 million people speak Georgian
