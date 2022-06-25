@@ -87,3 +87,23 @@ lines`); //with multiline string we use template literals ``
 //Strings and template literals assignment
 const descriptionNew = `${myCountry} is in ${myContinent}, and it's ${myPopulation} million people speak ${myLanguage}`;
 console.log(descriptionNew); //Georgia is in Europe/Asia, and it's 4 million people speak Georgian
+
+//Taking Decisions: if / else Statements
+const age = 15;
+
+if (age >= 18) {
+    console.log('Sarah can start driving license 🚗');
+} else {
+    const yearsLeft = 18 - age;
+    console.log(`Sarah is too young. Wait another ${yearsLeft} years...`);
+}
+
+const birthYear = 2006;
+let century;
+
+if (birthYear <= 2000) {
+    century = 20;
+} else {
+    century = 21;
+}
+console.log(century);
