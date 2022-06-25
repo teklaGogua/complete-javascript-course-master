@@ -88,6 +88,7 @@ lines`); //with multiline string we use template literals ``
 const descriptionNew = `${myCountry} is in ${myContinent}, and it's ${myPopulation} million people speak ${myLanguage}`;
 console.log(descriptionNew); //Georgia is in Europe/Asia, and it's 4 million people speak Georgian
 
+/*
 //Taking Decisions: if / else Statements
 const age = 15;
 
@@ -107,3 +108,12 @@ if (birthYear <= 2000) {
     century = 21;
 }
 console.log(century);
+*/
+
+//Taking Decisions: if / else Statements assignment
+if (myPopulation > 33) {
+    console.log(`${myCountry}'s population is above average`);
+} else {
+    const beforeAverage = 33 - myPopulation;
+    console.log(`${myCountry}'s population is ${beforeAverage} million before average`);
+}
