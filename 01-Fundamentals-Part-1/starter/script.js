@@ -118,6 +118,7 @@ if (myPopulation > 33) {
     console.log(`${myCountry}'s population is ${beforeAverage} million before average`);
 }
 
+/*
 //Type Conversion
 const inputYear = '2006';
 console.log(inputYear + 18); //200618
@@ -141,4 +142,12 @@ console.log('23' > '18'); // true
 
 let n = '1' + 1; //'11'
 n = n - 1; // 10
-console.log(n); 
+console.log(n);
+*/
+
+//Type Conversion and Coercion assignment
+console.log('9' - '5'); // 4
+console.log('19' - '13' + '17'); // 617
+console.log('19' - '13' + 17); // 23
+console.log('123' < 57); // false
+console.log(5 + 6 + '4' + 9 - 4 - 2); // 1143
