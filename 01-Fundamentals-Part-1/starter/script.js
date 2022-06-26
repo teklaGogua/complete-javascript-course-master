@@ -1,11 +1,10 @@
-/*
 //Values and Variables assignment
 const myCountry = 'Georgia';
 const myContinent = 'Europe/Asia';
 let myPopulation = 3;
 
 console.log(myCountry, myContinent, myPopulation);
-*/
+
 
 /*
 //Data types
@@ -31,6 +30,7 @@ console.log(typeof year); //Number
 console.log(typeof null); //It return object, but null's type is null
 */
 
+/*
 //Data types asssignment
 const isIsland = false;
 let myLanguage;
@@ -39,12 +39,15 @@ console.log(typeof isIsland); //boolean
 console.log(typeof myPopulation); //number
 console.log(typeof myCountry); //string
 console.log(typeof myLanguage); //undefined
+*/
 
+/*
 //let, const and var assignment
 myLanguage = 'Georgian';
 
 console.log(myLanguage);
 console.log(typeof myLanguage);
+*/
 
 /*
 //Basic operators assignment
@@ -302,6 +305,7 @@ switch (language) {
 }
 */
 
+/*
 //The Conditional (Ternary) Operator
 const age = 16;
 age >= 18 ? console.log('I like to drink wine') : console.log('I like to drink water'); //Statement
@@ -318,3 +322,7 @@ if (age >= 18) {
 console.log(drink2);
 
 console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`);
+*/
+
+//The Conditional (Ternary) Operator assignment
+console.log(`${myCountry}'s population is ${myPopulation > 33 ? 'above' : 'below'} average!`);
