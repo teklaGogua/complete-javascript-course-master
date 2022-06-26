@@ -1,9 +1,11 @@
+/*
 //Values and Variables assignment
 const myCountry = 'Georgia';
 const myContinent = 'Europe/Asia';
 let myPopulation = 3;
 
 console.log(myCountry, myContinent, myPopulation);
+*/
 
 /*
 //Data types
@@ -26,9 +28,10 @@ year = 2022;
 console.log(year); //2022
 console.log(typeof year); //Number
 
-console.log(typeof null); //It return object, but null's type is null 
+console.log(typeof null); //It return object, but null's type is null
 */
 
+/*
 //Data types asssignment
 const isIsland = false;
 let myLanguage;
@@ -37,13 +40,17 @@ console.log(typeof isIsland); //boolean
 console.log(typeof myPopulation); //number
 console.log(typeof myCountry); //string
 console.log(typeof myLanguage); //undefined
+*/
 
+/*
 //let, const and var assignment
 myLanguage = 'Georgian';
 
 console.log(myLanguage);
 console.log(typeof myLanguage);
+*/
 
+/*
 //Basic operators assignment
 let halfPopulation = myPopulation / 2;
 console.log(halfPopulation); //1,5
@@ -59,6 +66,7 @@ console.log(myPopulation < averagePopulation); //true
 
 const description = myCountry + ' is in ' + myContinent + ', and its ' + myPopulation + ' million people speak ' + myLanguage;
 console.log(description); //Georgia is in Europe/Asia, and its 4 million people speak Georgian
+*/
 
 /*
 //Strings and template literals
@@ -81,12 +89,14 @@ lines'); //Before ES6
 
 console.log(`String
 multiple
-lines`); //with multiline string we use template literals `` 
+lines`); //with multiline string we use template literals ``
 */
 
+/*
 //Strings and template literals assignment
 const descriptionNew = `${myCountry} is in ${myContinent}, and it's ${myPopulation} million people speak ${myLanguage}`;
 console.log(descriptionNew); //Georgia is in Europe/Asia, and it's 4 million people speak Georgian
+*/
 
 /*
 //Taking Decisions: if / else Statements
@@ -110,6 +120,7 @@ if (birthYear <= 2000) {
 console.log(century);
 */
 
+/*
 //Taking Decisions: if / else Statements assignment
 if (myPopulation > 33) {
     console.log(`${myCountry}'s population is above average`);
@@ -117,6 +128,7 @@ if (myPopulation > 33) {
     const beforeAverage = 33 - myPopulation;
     console.log(`${myCountry}'s population is ${beforeAverage} million before average`);
 }
+*/
 
 /*
 //Type Conversion
@@ -145,13 +157,16 @@ n = n - 1; // 10
 console.log(n);
 */
 
+/*
 //Type Conversion and Coercion assignment
 console.log('9' - '5'); // 4
 console.log('19' - '13' + '17'); // 617
 console.log('19' - '13' + 17); // 23
 console.log('123' < 57); // false
 console.log(5 + 6 + '4' + 9 - 4 - 2); // 1143
+*/
 
+/*
 //Truthy and Falsy Values
 //There are 5 false values: 0, '', undefined, null, NaN
 console.log(Boolean(0)); //false
@@ -173,3 +188,16 @@ if (height) {
 } else {
     console.log('Height is UNDEFINED ☹️');
 }
+*/
+
+//Equality Operators: == vs. === assignment
+const numNeighbours = Number(prompt('How many neighbour countries does your country have?'));
+
+if (numNeighbours === 1) {
+    console.log('Only 1 border!');
+} else if (numNeighbours > 1) {
+    console.log('More than 1 border');
+} else {
+    console.log('No borders');
+}
+
