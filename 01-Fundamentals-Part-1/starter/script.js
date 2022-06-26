@@ -1,11 +1,10 @@
-/*
 //Values and Variables assignment
 const myCountry = 'Georgia';
 const myContinent = 'Europe/Asia';
 let myPopulation = 3;
 
 console.log(myCountry, myContinent, myPopulation);
-*/
+
 
 /*
 //Data types
@@ -31,7 +30,6 @@ console.log(typeof year); //Number
 console.log(typeof null); //It return object, but null's type is null
 */
 
-/*
 //Data types asssignment
 const isIsland = false;
 let myLanguage;
@@ -40,15 +38,12 @@ console.log(typeof isIsland); //boolean
 console.log(typeof myPopulation); //number
 console.log(typeof myCountry); //string
 console.log(typeof myLanguage); //undefined
-*/
 
-/*
 //let, const and var assignment
 myLanguage = 'Georgian';
 
 console.log(myLanguage);
 console.log(typeof myLanguage);
-*/
 
 /*
 //Basic operators assignment
@@ -203,6 +198,7 @@ if (numNeighbours === 1) {
 }
 */
 
+/*
 //Logical Operators
 const hasDriversLicense = true; //A
 const hasGoodVision = true; //B
@@ -225,3 +221,12 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
 } else {
     console.log('Someone else should drive...');
 };
+*/
+
+//Logical Operators assignment
+if (myLanguage === 'English' && myPopulation < 50 && !isIsland) {
+    console.log(`You should live in ${myCountry} :)`);
+} else {
+    console.log(`${myCountry} does not meet your criteria :(`);
+}
+
