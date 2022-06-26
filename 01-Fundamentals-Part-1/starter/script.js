@@ -117,3 +117,28 @@ if (myPopulation > 33) {
     const beforeAverage = 33 - myPopulation;
     console.log(`${myCountry}'s population is ${beforeAverage} million before average`);
 }
+
+//Type Conversion
+const inputYear = '2006';
+console.log(inputYear + 18); //200618
+console.log(Number(inputYear) + 18); //2004
+
+console.log(Number('Jonas')); //NaN
+console.log(typeof NaN); //number
+
+console.log(String(23), 23);
+
+//Type Coercion
+console.log('I am ' + 23 + ' years old');
+console.log('I am ' + '23' + ' years old'); //This two are same thanks to type coercion
+
+console.log('23' - '10' - 3); // 10
+console.log('23' + '10' + 3); // '23103'
+
+console.log('23' * '2'); // 46
+console.log('23' / '2'); // 11.5
+console.log('23' > '18'); // true
+
+let n = '1' + 1; //'11'
+n = n - 1; // 10
+console.log(n); 
