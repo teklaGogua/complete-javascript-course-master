@@ -151,3 +151,25 @@ console.log('19' - '13' + '17'); // 617
 console.log('19' - '13' + 17); // 23
 console.log('123' < 57); // false
 console.log(5 + 6 + '4' + 9 - 4 - 2); // 1143
+
+//Truthy and Falsy Values
+//There are 5 false values: 0, '', undefined, null, NaN
+console.log(Boolean(0)); //false
+console.log(Boolean(undefined)); //false
+console.log(Boolean('Jonas')); //true
+console.log(Boolean({})); //true
+console.log(Boolean('')); //false
+
+const money = 100;
+if (money) {
+    console.log("Dont't spent it all 😊");
+} else {
+    console.log('You should get a job!');
+}
+
+let height = 162; //0 is bug in this aplication
+if (height) {
+    console.log('Yay! height is defined');
+} else {
+    console.log('Height is UNDEFINED ☹️');
+}
