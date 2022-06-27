@@ -35,6 +35,7 @@ const appleOrangeJuice = fruitProcessor(2, 4);
 console.log(appleOrangeJuice);
 */
 
+/*
 //Functions assignment
 function describeCountry(country, population, capitalCity) {
     return `${country} has ${population} million people and its capital city is ${capitalCity}`;
@@ -47,3 +48,20 @@ const finlandDescription = describeCountry('Finland', 6, 'Helsinki');
 console.log(georgiaDescription);
 console.log(germanyDescription);
 console.log(finlandDescription);
+*/
+
+//Function Declarations
+const age1 = calcAge1(2006); // Parameter is birthYear, Value is 2006
+
+function calcAge1(birthYear) {
+    return 2022 - birthYear;
+}
+
+//Functoion Expressions
+const calcAge2 = function (birthYear) {
+    return 2022 - birthYear;
+}
+
+const age2 = calcAge2(2006);
+
+console.log(age1, age2); //Functions are Values, not Types
