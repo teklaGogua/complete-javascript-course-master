@@ -50,6 +50,7 @@ console.log(germanyDescription);
 console.log(finlandDescription);
 */
 
+/*
 //Function Declarations
 const age1 = calcAge1(2006); // Parameter is birthYear, Value is 2006
 
@@ -65,3 +66,26 @@ const calcAge2 = function (birthYear) {
 const age2 = calcAge2(2006);
 
 console.log(age1, age2); //Functions are Values, not Types
+*/
+
+//Function Declarations vs. Expressions assignment
+function percentageOfWorld1(population) {
+    return population / 7900 * 100;
+}
+
+const georgiaPer1 = percentageOfWorld1(3);
+const finlandPer1 = percentageOfWorld1(6);
+const germanyPer1 = percentageOfWorld1(83);
+
+
+const percentageOfWorld2 = function (population) {
+    return population / 7900 * 100;
+}
+
+const georgiaPer2 = percentageOfWorld2(3);
+const finlandPer2 = percentageOfWorld2(6);
+const germanyPer2 = percentageOfWorld2(83);
+
+
+console.log(georgiaPer1, finlandPer1, germanyPer1);
+console.log(georgiaPer2, finlandPer2, germanyPer2);
