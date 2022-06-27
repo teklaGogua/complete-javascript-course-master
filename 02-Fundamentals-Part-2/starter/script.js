@@ -13,6 +13,7 @@ if (hasDriversLicense) console.log('I can drive :D');
 //const if = 23;
 */
 
+/*
 //Functions
 function logger() {
     console.log("My name is Tekla");
@@ -32,3 +33,17 @@ console.log(appleJuice);
 
 const appleOrangeJuice = fruitProcessor(2, 4);
 console.log(appleOrangeJuice);
+*/
+
+//Functions assignment
+function describeCountry(country, population, capitalCity) {
+    return `${country} has ${population} million people and its capital city is ${capitalCity}`;
+}
+
+const georgiaDescription = describeCountry('Georgia', 3, 'Tbilisi');
+const germanyDescription = describeCountry('Germany', 83, 'Berlin');
+const finlandDescription = describeCountry('Finland', 6, 'Helsinki');
+
+console.log(georgiaDescription);
+console.log(germanyDescription);
+console.log(finlandDescription);
