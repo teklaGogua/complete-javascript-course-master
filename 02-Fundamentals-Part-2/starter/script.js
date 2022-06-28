@@ -109,6 +109,7 @@ console.log(yearsUntilRetirement(2006, 'Tekla'));
 console.log(yearsUntilRetirement(1991, 'Jonas'));
 */
 
+/*
 //Arrow Functions assignment
 const percentageOfWorld3 = population => population / 7900 * 100;
 
@@ -117,3 +118,20 @@ const finlandPer3 = percentageOfWorld3(6);
 const germanyPer3 = percentageOfWorld3(83);
 
 console.log(georgiaPer3, finlandPer3, germanyPer3);
+*/
+
+//Functions Calling Other Functions
+function cutFruitPieces(fruit) {
+    return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges) {
+    const applePieces = cutFruitPieces(apples);
+    const orangePieces = cutFruitPieces(oranges);
+
+
+    const juice = `Juice with ${applePieces} piece of apples and ${orangePieces} piece of oranges.`
+    return juice;
+}
+
+console.log(fruitProcessor(2, 3));
