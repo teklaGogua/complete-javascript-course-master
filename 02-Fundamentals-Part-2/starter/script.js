@@ -246,6 +246,7 @@ const percentages = [
 console.log(percentages);
 */
 
+/*
 //Basic Array Operations (Methods)
 const friends = ['Michael', 'Steven', 'Peter'];
 
@@ -273,9 +274,26 @@ console.log(friends.indexOf('Bob')); // -1
 friends.push(23);
 console.log(friends.includes('Steven')); //true
 console.log(friends.includes('Bob')); //false
-console.log(friends.includes('23')); //false 
+console.log(friends.includes('23')); //false
 console.log(friends.includes(23)); //true
 
 if (friends.includes('Steven')) {
-    console.log('Yu have a friend called Steven');
+    console.log('You have a friend called Steven');
 }
+*/
+
+//Basic Array Operations (Methods) assignment
+const neighbours = ['Russia', 'Turkey', 'Armenia', 'Azerbaijan'];
+
+neighbours.push('Utopia');
+console.log(neighbours);
+
+neighbours.pop();
+console.log(neighbours);
+
+if (!neighbours.includes('Germany')) {
+    console.log('Probably not a central European country :D');
+}
+
+neighbours[neighbours.indexOf('Russia')] = 'Russia federation';
+console.log(neighbours);
