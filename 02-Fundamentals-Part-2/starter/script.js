@@ -210,6 +210,7 @@ console.log(tekla);
 console.log(tekla.length); //5
 */
 
+/*
 //Arrays exercise
 const calcAge = function (birthYear) {
     return 2022 - birthYear;
@@ -225,3 +226,20 @@ console.log(age1, age2, age3);
 
 const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
 console.log(ages);
+*/
+
+//Introduction to Arrays assignment
+const populations = [3, 4, 83, 1441];
+console.log(populations.length === 4);
+
+function percentageOfWorld1(population) {
+    return population / 7900 * 100;
+}
+
+const percentages = [
+    percentageOfWorld1(populations[0]),
+    percentageOfWorld1(populations[1]),
+    percentageOfWorld1(populations[2]),
+    percentageOfWorld1(populations[populations.length - 1])
+];
+console.log(percentages);
