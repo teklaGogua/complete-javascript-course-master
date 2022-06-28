@@ -92,6 +92,7 @@ console.log(georgiaPer1, finlandPer1, germanyPer1);
 console.log(georgiaPer2, finlandPer2, germanyPer2);
 */
 
+/*
 //Arrow function
 const calcAge3 = birthYear => 2022 - birthYear;
 const age3 = calcAge3(2006);
@@ -106,3 +107,13 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 
 console.log(yearsUntilRetirement(2006, 'Tekla'));
 console.log(yearsUntilRetirement(1991, 'Jonas'));
+*/
+
+//Arrow Functions assignment
+const percentageOfWorld3 = population => population / 7900 * 100;
+
+const georgiaPer3 = percentageOfWorld3(3);
+const finlandPer3 = percentageOfWorld3(6);
+const germanyPer3 = percentageOfWorld3(83);
+
+console.log(georgiaPer3, finlandPer3, germanyPer3);
