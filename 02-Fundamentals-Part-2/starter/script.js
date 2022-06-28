@@ -228,6 +228,7 @@ const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length -
 console.log(ages);
 */
 
+/*
 //Introduction to Arrays assignment
 const populations = [3, 4, 83, 1441];
 console.log(populations.length === 4);
@@ -243,3 +244,38 @@ const percentages = [
     percentageOfWorld1(populations[populations.length - 1])
 ];
 console.log(percentages);
+*/
+
+//Basic Array Operations (Methods)
+const friends = ['Michael', 'Steven', 'Peter'];
+
+//Add elements
+const newLength = friends.push('Jay'); // Returns length of the Array
+console.log(friends); // ['Michael', 'Steven', 'Peter', 'Jay']
+console.log(newLength); // 4
+
+friends.unshift('John');
+console.log(friends); // ['John', 'Michael', 'Steven', 'Peter', 'Jay']
+
+//Remove elements
+friends.pop(); // Removes Last element
+const popped = friends.pop(); // Returns Removed element
+console.log(popped); // Peter
+console.log(friends); // ['John', 'Michael', 'Steven']
+
+friends.shift(); // Removes First element
+console.log(friends); // ['Michael', 'Steven']
+
+//Other methods
+console.log(friends.indexOf('Steven')); // 1
+console.log(friends.indexOf('Bob')); // -1
+
+friends.push(23);
+console.log(friends.includes('Steven')); //true
+console.log(friends.includes('Bob')); //false
+console.log(friends.includes('23')); //false 
+console.log(friends.includes(23)); //true
+
+if (friends.includes('Steven')) {
+    console.log('Yu have a friend called Steven');
+}
