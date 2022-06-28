@@ -68,6 +68,7 @@ const age2 = calcAge2(2006);
 console.log(age1, age2); //Functions are Values, not Types
 */
 
+/*
 //Function Declarations vs. Expressions assignment
 function percentageOfWorld1(population) {
     return population / 7900 * 100;
@@ -89,3 +90,19 @@ const germanyPer2 = percentageOfWorld2(83);
 
 console.log(georgiaPer1, finlandPer1, germanyPer1);
 console.log(georgiaPer2, finlandPer2, germanyPer2);
+*/
+
+//Arrow function
+const calcAge3 = birthYear => 2022 - birthYear;
+const age3 = calcAge3(2006);
+console.log(age3);
+
+const yearsUntilRetirement = (birthYear, firstName) => {
+    const age = 2070 - birthYear;
+    const retirement = 65 - age;
+    // return retirement;
+    return `${firstName} retires in ${retirement} years`;
+}
+
+console.log(yearsUntilRetirement(2006, 'Tekla'));
+console.log(yearsUntilRetirement(1991, 'Jonas'));
