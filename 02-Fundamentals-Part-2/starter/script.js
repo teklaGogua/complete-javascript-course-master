@@ -120,6 +120,7 @@ const germanyPer3 = percentageOfWorld3(83);
 console.log(georgiaPer3, finlandPer3, germanyPer3);
 */
 
+/*
 //Functions Calling Other Functions
 function cutFruitPieces(fruit) {
     return fruit * 4;
@@ -135,3 +136,24 @@ function fruitProcessor(apples, oranges) {
 }
 
 console.log(fruitProcessor(2, 3));
+*/
+
+//Functions Calling Other Functions assignment
+function percentageOfWorld1(population) {
+    return population / 7900 * 100;
+}
+
+const describePopulation = (country, population) => {
+    const percPopulation = percentageOfWorld1(population);
+
+    return `${country} has ${population} million people, which is about ${percPopulation} of the world.`
+}
+
+const desGeorgia = describePopulation('Georgia', 3);
+const desFinland = describePopulation('Finland', 6);
+const desGermany = describePopulation('Germany', 83);
+
+console.log(desGeorgia);
+console.log(desFinland);
+console.log(desGermany);
+
