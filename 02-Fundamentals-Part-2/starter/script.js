@@ -159,6 +159,7 @@ console.log(desFinland);
 console.log(desGermany);
 */
 
+/*
 //Reviewing Functions
 const calcAge = function (birthYear) {
     return 2070 - birthYear;
@@ -179,3 +180,30 @@ const yearsUntilRetirement = function (birthYear, firstName) {
 
 console.log(yearsUntilRetirement(2006, 'Tekla'));
 console.log(yearsUntilRetirement(1991, 'Jonas'));
+*/
+
+//Introduction to Arrays
+const friend1 = 'Michael';
+const friend2 = 'Steven';
+const friend3 = 'Peter';
+
+const friends = ['Michael', 'Steven', 'Peter']; //literal syntax
+console.log(friends);
+
+const years = new Array(1991, 2006, 2022);
+console.log(years);
+
+console.log(friends[0]); //Michael
+console.log(friends[2]); //Peter
+
+console.log(friends.length); //3
+console.log(friends[friends.length - 1]); //Peter
+
+friends[2] = 'Jay';
+console.log(friends);
+// friends = ['Bob', 'Alice']; //TypeError: Assignment to constant variable.
+
+const firstName = 'Tekla';
+const tekla = [firstName, 'Gogua', 2022 - 2006, 'student', friends];
+console.log(tekla);
+console.log(tekla.length); //5
