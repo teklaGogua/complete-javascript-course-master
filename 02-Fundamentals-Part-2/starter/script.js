@@ -310,6 +310,7 @@ const tekla = {
 };
 */
 
+/*
 //Introduction to Objects assignment
 const myCountry = {
     country: 'Georgia',
@@ -318,6 +319,7 @@ const myCountry = {
     population: 3,
     neighbours: ['Russia', 'Turkey', 'Armenia', 'Azerbaijan']
 };
+*/
 
 /*
 //Dot vs. Bracket Notation
@@ -346,6 +348,7 @@ console.log(tekla);
 console.log(`${tekla.firstName} has ${tekla.friends.length} friends, and her best friend is called ${tekla.friends[0]}`);
 */
 
+/*
 //Dot vs. Bracket Notation assignment
 console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`);
 
@@ -354,3 +357,35 @@ console.log(myCountry.population);
 
 myCountry['population'] -= 2;
 console.log(myCountry.population);
+*/
+
+//Object methods
+const tekla = {
+    firstName: 'Tekla',
+    lastName: 'Gogua',
+    birthYear: 2006,
+    friends: ['Mary', 'Dachi', 'Lizi'],
+    hasDriversLicense: false,
+
+    // calcAge: function (birthYear) {
+    //     return 2022 - birthYear;
+    // }
+
+    // calcAge: function () {
+    //     // console.log(this);
+    //     return 2022 - this.birthYear;
+    // }
+
+    calcAge: function () {
+        this.age = 2022 - this.birthYear;
+        return this.age;
+    }
+};
+
+console.log(tekla.calcAge());
+
+console.log(tekla.age);
+console.log(tekla.age);
+console.log(tekla.age);
+
+// console.log(tekla['calcAge'](2006));
