@@ -339,3 +339,7 @@ if (tekla[interestedIn]) {
 tekla.location = 'Tbilisi';
 tekla['school'] = 173;
 console.log(tekla);
+
+//Dot vs. Bracket Notation Challenge
+//  "Tekla has 3 friends, and her best friend is called Mary"
+console.log(`${tekla.firstName} has ${tekla.friends.length} friends, and her best friend is called ${tekla.friends[0]}`);
