@@ -282,6 +282,7 @@ if (friends.includes('Steven')) {
 }
 */
 
+/*
 //Basic Array Operations (Methods) assignment
 const neighbours = ['Russia', 'Turkey', 'Armenia', 'Azerbaijan'];
 
@@ -297,3 +298,13 @@ if (!neighbours.includes('Germany')) {
 
 neighbours[neighbours.indexOf('Russia')] = 'Russia federation';
 console.log(neighbours);
+*/
+
+//Introduction to Objects
+const tekla = {
+    firstName: 'Tekla',
+    lastName: 'Gogua',
+    age: 2022 - 2006,
+    job: 'teacher',
+    friends: ['Mary', 'Dachi', 'Lizi']
+};
