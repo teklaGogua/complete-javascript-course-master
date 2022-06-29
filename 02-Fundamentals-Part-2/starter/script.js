@@ -364,6 +364,7 @@ const tekla = {
     firstName: 'Tekla',
     lastName: 'Gogua',
     birthYear: 2006,
+    job: 'programmer',
     friends: ['Mary', 'Dachi', 'Lizi'],
     hasDriversLicense: false,
 
@@ -379,6 +380,11 @@ const tekla = {
     calcAge: function () {
         this.age = 2022 - this.birthYear;
         return this.age;
+    },
+
+    getSummary: function () {
+        this.summary = `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and she has ${this.hasDriversLicense ? 'a' : 'no'} driver's license`;
+        return this.summary;
     }
 };
 
@@ -389,3 +395,7 @@ console.log(tekla.age);
 console.log(tekla.age);
 
 // console.log(tekla['calcAge'](2006));
+
+//Object methods challenge
+// 'Tekla is a 16-year old programmer, and she has no driver's license'
+console.log(tekla.getSummary());
