@@ -300,6 +300,7 @@ neighbours[neighbours.indexOf('Russia')] = 'Russia federation';
 console.log(neighbours);
 */
 
+/*
 //Introduction to Objects
 const tekla = {
     firstName: 'Tekla',
@@ -307,4 +308,14 @@ const tekla = {
     age: 2022 - 2006,
     job: 'teacher',
     friends: ['Mary', 'Dachi', 'Lizi']
+};
+*/
+
+//Introduction to Objects assignment
+const myCountry = {
+    country: 'Georgia',
+    capital: 'Tbilisi',
+    language: 'Georgian',
+    population: 3,
+    neighbours: ['Russia', 'Turkey', 'Armenia', 'Azerbaijan']
 };
