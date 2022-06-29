@@ -300,6 +300,7 @@ neighbours[neighbours.indexOf('Russia')] = 'Russia federation';
 console.log(neighbours);
 */
 
+/*
 //Introduction to Objects
 const tekla = {
     firstName: 'Tekla',
@@ -307,8 +308,8 @@ const tekla = {
     age: 2022 - 2006,
     friends: ['Mary', 'Dachi', 'Lizi']
 };
+*/
 
-/*
 //Introduction to Objects assignment
 const myCountry = {
     country: 'Georgia',
@@ -317,8 +318,8 @@ const myCountry = {
     population: 3,
     neighbours: ['Russia', 'Turkey', 'Armenia', 'Azerbaijan']
 };
-*/
 
+/*
 //Dot vs. Bracket Notation
 console.log(tekla.lastName); //Gogua
 console.log(tekla['lastName']); //Gogua
@@ -343,3 +344,13 @@ console.log(tekla);
 //Dot vs. Bracket Notation Challenge
 //  "Tekla has 3 friends, and her best friend is called Mary"
 console.log(`${tekla.firstName} has ${tekla.friends.length} friends, and her best friend is called ${tekla.friends[0]}`);
+*/
+
+//Dot vs. Bracket Notation assignment
+console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`);
+
+myCountry.population += 2;
+console.log(myCountry.population);
+
+myCountry['population'] -= 2;
+console.log(myCountry.population);
