@@ -300,17 +300,15 @@ neighbours[neighbours.indexOf('Russia')] = 'Russia federation';
 console.log(neighbours);
 */
 
-/*
 //Introduction to Objects
 const tekla = {
     firstName: 'Tekla',
     lastName: 'Gogua',
     age: 2022 - 2006,
-    job: 'teacher',
     friends: ['Mary', 'Dachi', 'Lizi']
 };
-*/
 
+/*
 //Introduction to Objects assignment
 const myCountry = {
     country: 'Georgia',
@@ -319,3 +317,25 @@ const myCountry = {
     population: 3,
     neighbours: ['Russia', 'Turkey', 'Armenia', 'Azerbaijan']
 };
+*/
+
+//Dot vs. Bracket Notation
+console.log(tekla.lastName); //Gogua
+console.log(tekla['lastName']); //Gogua
+
+const nameKey = 'Name';
+console.log(tekla['first' + nameKey]); //Tekla
+console.log(tekla['last' + nameKey]); //Gogua
+
+const interestedIn = prompt('What do you want to know about Tekla? Choose between firstName, lastname, age and friends');
+// console.log(tekla.interestedIn); //undefined
+
+if (tekla[interestedIn]) {
+    console.log(tekla[interestedIn]);
+} else {
+    console.log("This information doesn't exist: Choose between firstName, lastname, age and friends");
+}
+
+tekla.location = 'Tbilisi';
+tekla['school'] = 173;
+console.log(tekla);
