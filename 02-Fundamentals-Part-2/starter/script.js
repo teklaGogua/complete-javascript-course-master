@@ -310,16 +310,26 @@ const tekla = {
 };
 */
 
-/*
 //Introduction to Objects assignment
 const myCountry = {
     country: 'Georgia',
     capital: 'Tbilisi',
     language: 'Georgian',
     population: 3,
-    neighbours: ['Russia', 'Turkey', 'Armenia', 'Azerbaijan']
+    neighbours: ['Russia', 'Turkey', 'Armenia', 'Azerbaijan'],
+
+    describe: function () {
+        return `${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`
+    },
+
+    checkIsland: function () {
+        this.isIsland = this.neighbours.length === 0 ? true : false;
+
+        // this.isIsland = !Boolean(this.neighbours.length);
+
+        return this.isIsland;
+    }
 };
-*/
 
 /*
 //Dot vs. Bracket Notation
@@ -359,6 +369,7 @@ myCountry['population'] -= 2;
 console.log(myCountry.population);
 */
 
+/*
 //Object methods
 const tekla = {
     firstName: 'Tekla',
@@ -399,3 +410,9 @@ console.log(tekla.age);
 //Object methods challenge
 // 'Tekla is a 16-year old programmer, and she has no driver's license'
 console.log(tekla.getSummary());
+*/
+
+//Object methods assignment
+console.log(myCountry.describe());
+console.log(myCountry.checkIsland());
+console.log(myCountry);
