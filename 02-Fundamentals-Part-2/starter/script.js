@@ -421,6 +421,7 @@ console.log(myCountry.checkIsland());
 console.log(myCountry);
 */
 
+/*
 //Iteration_ The for Loop
 // console.log('Lifting waights repetition 1');
 // console.log('Lifting waights repetition 2');
@@ -437,3 +438,10 @@ console.log(myCountry);
 for (let rep = 1; rep <= 10; rep++) {
     console.log(`Lifting waights repetition ${rep}`);
 }
+*/
+
+//Iteration_ The for Loop asignment
+for (let vote = 1; vote <= 50; vote++) {
+    console.log(`Voter number ${vote} is currently voting`);
+}
+
