@@ -447,6 +447,7 @@ for (let vote = 1; vote <= 50; vote++) {
 }
 */
 
+/*
 //Looping Arrays, Breaking and Continuing
 const tekla = [
     'Tekla',
@@ -493,3 +494,17 @@ for (let i = 0; i < tekla.length; i++) {
 
     console.log(tekla[i], typeof tekla[i]);
 }
+*/
+
+//Looping Arrays, Breaking and Continuing assignment
+const populations = [3, 4, 83, 1441];
+const percentages2 = [];
+
+function percentageOfWorld1(population) {
+    return population / 7900 * 100;
+}
+
+for (let i = 0; i < populations.length; i++) {
+    percentages2.push(percentageOfWorld1(populations[i]));
+}
+console.log(percentages2);
