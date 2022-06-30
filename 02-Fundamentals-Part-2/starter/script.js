@@ -550,6 +550,7 @@ for (let i = 0; i < listOfNeighbours.length; i++) {
 }
 */
 
+/*
 //The while Loop
 // for (let rep = 1; rep <= 10; rep++) {
 //     console.log(`Lifting waights repetition ${rep}`);
@@ -568,3 +569,19 @@ while (dice !== 6) {
     dice = Math.trunc(Math.random() * 6) + 1;
     if (dice === 6) console.log('Loop is about to end...');
 }
+*/
+
+//The while Loop assignment
+const populations = [3, 4, 83, 1441];
+const percentages3 = [];
+
+function percentageOfWorld1(population) {
+    return population / 7900 * 100;
+}
+
+let counter = 0;
+while (counter < populations.length) {
+    percentages3.push(percentageOfWorld1(populations[counter]));
+    counter++;
+}
+console.log(percentages3);
