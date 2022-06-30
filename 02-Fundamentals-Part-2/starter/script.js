@@ -496,6 +496,7 @@ for (let i = 0; i < tekla.length; i++) {
 }
 */
 
+/*
 //Looping Arrays, Breaking and Continuing assignment
 const populations = [3, 4, 83, 1441];
 const percentages2 = [];
@@ -508,3 +509,26 @@ for (let i = 0; i < populations.length; i++) {
     percentages2.push(percentageOfWorld1(populations[i]));
 }
 console.log(percentages2);
+*/
+
+//Looping Backwards and Loops in Loops
+const tekla = [
+    'Tekla',
+    'Gogua',
+    2022 - 2006,
+    'student',
+    ['Mary', 'Dachi', 'Lizi'],
+    false
+];
+
+for (let i = tekla.length - 1; i >= 0; i--) {
+    console.log(i, tekla[i]);
+}
+
+for (let exercise = 1; exercise < 4; /*This is same -> rep <= 3*/ exercise++) {
+    console.log(`---------- Starting exercise ${exercise}`);
+
+    for (let rep = 1; rep < 6; /*This is same -> rep <= 5*/ rep++) {
+        console.log(`Exercise ${exercise}: Lifting weight repetition ${rep}`);
+    }
+}
