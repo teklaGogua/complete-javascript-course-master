@@ -440,8 +440,56 @@ for (let rep = 1; rep <= 10; rep++) {
 }
 */
 
+/*
 //Iteration_ The for Loop asignment
 for (let vote = 1; vote <= 50; vote++) {
     console.log(`Voter number ${vote} is currently voting`);
 }
+*/
 
+//Looping Arrays, Breaking and Continuing
+const tekla = [
+    'Tekla',
+    'Gogua',
+    2022 - 2006,
+    'student',
+    ['Mary', 'Dachi', 'Lizi'],
+    false
+];
+const types = [];
+
+for (let i = 0; i < tekla.length; i++) {
+    //Reading from tekla array
+    console.log(tekla[i], typeof tekla[i]);
+
+    //Filling types array
+    // types[i] = typeof tekla[i];
+    types.push(typeof tekla[i]);
+}
+
+console.log(types);
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(2022 - years[i]);
+}
+
+console.log(ages);
+
+// continue
+console.log('--- ONLY STRINGS ---');
+for (let i = 0; i < tekla.length; i++) {
+    if (typeof tekla[i] !== 'string') continue;
+
+    console.log(tekla[i], typeof tekla[i]);
+}
+
+// break
+console.log('--- BREAK WITH NUMBER ---');
+for (let i = 0; i < tekla.length; i++) {
+    if (typeof tekla[i] === 'number') break;
+
+    console.log(tekla[i], typeof tekla[i]);
+}
