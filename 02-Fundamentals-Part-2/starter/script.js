@@ -511,6 +511,7 @@ for (let i = 0; i < populations.length; i++) {
 console.log(percentages2);
 */
 
+/*
 //Looping Backwards and Loops in Loops
 const tekla = [
     'Tekla',
@@ -525,10 +526,24 @@ for (let i = tekla.length - 1; i >= 0; i--) {
     console.log(i, tekla[i]);
 }
 
-for (let exercise = 1; exercise < 4; /*This is same -> rep <= 3*/ exercise++) {
+for (let exercise = 1; exercise < 4; exercise++) {
     console.log(`---------- Starting exercise ${exercise}`);
 
-    for (let rep = 1; rep < 6; /*This is same -> rep <= 5*/ rep++) {
+    for (let rep = 1; rep < 6; rep++) {
         console.log(`Exercise ${exercise}: Lifting weight repetition ${rep}`);
+    }
+}
+*/
+
+//Looping Backwards and Loops in Loops assignment
+const listOfNeighbours = [
+    ['Canada', 'Mexico'],
+    ['Spain'],
+    ['Norway', 'Sweden', 'Russia']
+];
+
+for (let i = 0; i < listOfNeighbours.length; i++) {
+    for (let t = 0; t < listOfNeighbours[i].length; t++) {
+        console.log(`Neighbour: ${listOfNeighbours[i][t]}`);
     }
 }
