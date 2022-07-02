@@ -41,6 +41,10 @@ document.querySelector('.check').addEventListener('click', function () {
     } else {
       displayText('.message', '🤕 You lost a game!');
       displayText('.score', 0);
+      displayText('.number', '💀');
+
+      document.querySelector('body').style.backgroundColor = 'rgb(200, 10, 4)';
+      document.querySelector('.number').style.width = '30rem';
     }
   }
 });
