@@ -66,8 +66,9 @@ btnRoll.addEventListener('click', function () {
   }
 });
 
+// Holding buttom functionality
 btnHold.addEventListener('click', function () {
-  if (playing) {
+  if (playing && currentScore !== 0) {
     // 1. Add current score to active player's score
     scores[activePlayer] += currentScore;
     document.getElementById(`score--${activePlayer}`).textContent =
@@ -92,4 +93,5 @@ btnHold.addEventListener('click', function () {
   }
 });
 
+// New Game buttom functionality
 btnNew.addEventListener('click', init);
