@@ -127,6 +127,7 @@ const f = tekla.calcAge;
 f();
 */
 
+/*
 //////////////////////////////////////
 // Regular Functions vs. Arrow Functions
 
@@ -177,3 +178,20 @@ let addArrow = (a, b) => {
   return a + b;
 };
 addArrow(2, 5, 8);
+*/
+
+// Primitives vs. Objects in Practice
+let age = 30;
+let oldAge = age;
+age = 31;
+console.log(age); // 31
+console.log(oldAge); // 30
+
+const me = {
+  name: 'Jonas',
+  age: 30,
+};
+const friend = me;
+friend.age = 27;
+console.log('Friends', friend); // Friends {name: 'Jonas', age: 27}
+console.log('Me', me); // Friends {name: 'Jonas', age: 27}
