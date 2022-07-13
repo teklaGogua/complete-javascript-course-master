@@ -180,7 +180,9 @@ let addArrow = (a, b) => {
 addArrow(2, 5, 8);
 */
 
-// Primitives vs. Objects in Practice
+/*
+//////////////////////////////////////
+// Primitives vs. Objects
 let age = 30;
 let oldAge = age;
 age = 31;
@@ -195,3 +197,44 @@ const friend = me;
 friend.age = 27;
 console.log('Friends', friend); // Friends {name: 'Jonas', age: 27}
 console.log('Me', me); // Friends {name: 'Jonas', age: 27}
+*/
+
+//////////////////////////////////////
+// Primitives vs. Objects in Practice
+// Primitive types
+let lastName = 'Williams';
+let oldLastName = lastName;
+lastName = 'Davis';
+console.log(lastName); // Davis
+console.log(oldLastName); // Williams
+
+// Reference types
+const jessica = {
+  firstName: 'Jessica',
+  lastName: 'Williams',
+  age: 27,
+};
+const marriedJessica = jessica;
+marriedJessica.lastName = 'Davis';
+console.log('Before marriage:', jessica.lastName); // Before marriage Davis
+console.log('After marriage:', marriedJessica.lastName); // Before marriage Davis
+// marriedJessica = {};
+
+// Copying objects
+const jessica2 = {
+  firstName: 'Jessica',
+  lastName: 'Williams',
+  age: 27,
+  family: ['Alice', 'Bob'],
+};
+
+const jessicaCopy = Object.assign({}, jessica2);
+jessicaCopy.lastName = 'Davis';
+
+jessicaCopy.family.push('Jack');
+jessicaCopy.family.push('John');
+
+console.log('Before marriage:', jessica2.lastName); // Before marriage Williams
+console.log(jessica2);
+console.log('After marriage:', jessicaCopy.lastName); // After marriage Davis
+console.log(jessicaCopy);
