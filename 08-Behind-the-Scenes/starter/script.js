@@ -41,8 +41,9 @@ clacAge(2006);
 // printAge();
 */
 
+/*
 //////////////////////////////////////
-// Hoisying and TDZ in Practise
+// Hoisting and TDZ in Practise
 
 // Variables
 console.log(me); // Undefined
@@ -86,3 +87,40 @@ const z = 3;
 console.log(x === window.x); // true
 console.log(y === window.y); // false
 console.log(z === window.z); // false
+*/
+
+////////////////////////////////////////
+// The this Keyword in Practice
+// console.log(this);
+
+const calcAge = function (birthYear) {
+  console.log(2022 - birthYear);
+  // console.log(this);
+};
+
+calcAge(2006);
+
+const calcAgeArrow = birthYear => {
+  console.log(2022 - birthYear);
+  // console.log(this);
+};
+
+calcAgeArrow(2006);
+
+const tekla = {
+  year: 2006,
+  calcAge: function () {
+    console.log(this);
+    console.log(2022 - this.year);
+  },
+};
+tekla.calcAge();
+
+const matilda = {
+  year: 2017,
+};
+matilda.calcAge = tekla.calcAge;
+matilda.calcAge();
+
+const f = tekla.calcAge;
+f();
